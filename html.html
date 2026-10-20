@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Ceria - Jajanan Kekinian</title>
+    
+    <!-- Mengimpor Google Fonts: Baloo 2 untuk judul dan Plus Jakarta Sans untuk teks isi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Menghubungkan ke file CSS external -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== 1. HEADER & NAVIGASI ==================== -->
+    <header class="header">
+        <div class="container navbar">
+            <!-- Logo teks nama usaha -->
+            <a href="#beranda" class="logo">Kedai Ceria</a>
+            
+            <!-- Tombol Hamburger Menu untuk tampilan Mobile/HP -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">
+                <span class="hamburger"></span>
+                Menu
+            </button>
+            
+            <!-- Navigasi Utama -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#produk" class="nav-link">Produk</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== 2. SEKSI BERANDA ==================== -->
+        <section id="beranda" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="badge-label">Jajanan Kekinian</span>
+                    <h1>Kedai Ceria</h1>
+                    <p class="slogan">Kedai Ceria, ceria penjualnya ceria pula pembelinya.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-wa-umum">Pesan via WhatsApp</a>
+                        <a href="#produk" class="btn btn-outline">Lihat Produk</a>
+                    </div>
+
+                    <!-- 3 Fakta Singkat -->
+                    <div class="fakta-singkat">
+                        <div class="fakta-item">
+                            <h3>Sejak 2026</h3>
+                            <p>Di Lawang</p>
+                        </div>
+                        <div class="fakta-item">
+                            <h3>8 Varian</h3>
+                            <p>Jajanan kekinian</p>
+                        </div>
+                        <div class="fakta-item">
+                            <h3>Alami</h3>
+                            <p>Tanpa pengawet</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="img/utama.png" alt="Foto utama Kedai Ceria" class="img-responsive">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 3. SEKSI TENTANG USAHA ==================== -->
+        <section id="tentang" class="tentang-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tentang Usaha</h2>
+                    <p>Mengenal lebih dekat Kedai Ceria</p>
+                </div>
+
+                <div class="cerita-box">
+                    <p>Kedai Ceria berdiri pada 20 September 2026, Zaskia yg menjual jajanan kekinian favorit anak-anak muda jaman sekarang yg membantu ia mendapatkan uang saku tambahan dari jualannya tersebut.</p>
+                </div>
+
+                <!-- 3 Keunggulan -->
+                <div class="keunggulan-grid">
+                    <div class="keunggulan-card">
+                        <div class="icon">🌿</div>
+                        <h3>Tanpa Pengawet</h3>
+                        <p>Makanan yang dijual tanpa diberi bahan pengawet tambahan.</p>
+                    </div>
+                    <div class="keunggulan-card">
+                        <div class="icon">😋</div>
+                        <h3>Rasa Enak</h3>
+                        <p>Rasa dari makanan yang jual memiliki ciri khas sendiri dari Kedai Ceria yang enak dan nagih.</p>
+                    </div>
+                    <div class="keunggulan-card">
+                        <div class="icon">✨</div>
+                        <h3>Higienis</h3>
+                        <p>Makanan dijamin higienis, bersih, dan aman dari kotoran.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. SEKSI PRODUK ==================== -->
+        <section id="produk" class="produk-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Daftar Produk</h2>
+                    <p class="produk-keterangan">
+                        Harga per kemasan. Pesan minimal 3 kemasan, pengantaran gratis untuk wilayah Lawang.
+                    </p>
+                </div>
+
+                <!-- Grid Kartu Produk -->
+                <div class="produk-grid">
+                    
+                    <!-- Produk 1 -->
+                    <div class="produk-card">
+                        <img src="img/produk-1.jpeg" alt="Tahu Kocek Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Tahu Kocek</h3>
+                            <span class="produk-porsi">1 cup</span>
+                            <p class="produk-deskripsi">Tahu kocek dengan bumbu pedas terbuat dari sambal dan cabai asli.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Tahu Kocek">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 2 -->
+                    <div class="produk-card">
+                        <img src="img/produk-2.jpeg" alt="Wonton Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Wonton</h3>
+                            <span class="produk-porsi">1 foam</span>
+                            <p class="produk-deskripsi">Siomay isi dengan chili oil pedas yang nagih.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Wonton">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 3 -->
+                    <div class="produk-card">
+                        <img src="img/produk-3.jpeg" alt="Dimsum Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Dimsum</h3>
+                            <span class="produk-porsi">1 foam</span>
+                            <p class="produk-deskripsi">Dimsum ayam dengan saos pedas yang nikmat.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Dimsum">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 4 -->
+                    <div class="produk-card">
+                        <img src="img/produk-4.jpeg" alt="Es coklat Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Es coklat</h3>
+                            <span class="produk-porsi">1 cup</span>
+                            <p class="produk-deskripsi">Es rasa coklat dengan dicampuri cincau serta susu kental manis.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Es coklat">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 5 -->
+                    <div class="produk-card">
+                        <img src="img/produk-5.jpeg" alt="Risol Mayo Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Risol Mayo</h3>
+                            <span class="produk-porsi">1 foam</span>
+                            <p class="produk-deskripsi">Risol yang berisi potongan sayur wortel dan telur serta berbalut mayonaise yg lumer.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Risol Mayo">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 6 -->
+                    <div class="produk-card">
+                        <img src="img/produk-6.jpeg" alt="Sosis Solo Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Sosis Solo</h3>
+                            <span class="produk-porsi">1 foam</span>
+                            <p class="produk-deskripsi">Sosis Solo dengan isian ayam yang melimpah.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Sosis Solo">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 7 -->
+                    <div class="produk-card">
+                        <img src="img/produk-7.jpeg" alt="Tempura Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Tempura</h3>
+                            <span class="produk-porsi">1 foam</span>
+                            <p class="produk-deskripsi">Aneka tempura yang bisa di mix dan diberi bumbu sesuai selera.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Tempura">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 8 -->
+                    <div class="produk-card">
+                        <img src="img/produk-8.jpeg" alt="Es Sques Kedai Ceria" class="produk-img">
+                        <div class="produk-body">
+                            <h3 class="produk-nama">Es Sques</h3>
+                            <span class="produk-porsi">1 cup</span>
+                            <p class="produk-deskripsi">Es jadul yang saat digigit seperti spons.</p>
+                            <div class="produk-footer">
+                                <span class="produk-harga">Rp5.000</span>
+                                <a href="#" class="btn btn-sm btn-wa-produk" data-produk="Es Sques">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. SEKSI KONTAK DAN LOKASI ==================== -->
+        <section id="kontak" class="kontak-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Kontak & Lokasi</h2>
+                    <p>Silakan hubungi kami atau datang langsung ke kedai</p>
+                </div>
+
+                <div class="kontak-grid">
+                    <!-- Informasi Kontak -->
+                    <div class="kontak-info">
+                        <h3>Informasi Usaha</h3>
+                        <p><strong>Pemilik:</strong> Kak Zaskia (Berdiri: 2026 · Karyawan: 3 orang)</p>
+                        <p><strong>Alamat:</strong> Jl. Indrokilo Utara Tugu Merah Polaman, Lawang, Kabupaten Malang</p>
+                        <p><strong>WhatsApp:</strong> 0856-4664-1319</p>
+                        <div style="margin-top: 15px;">
+                            <a href="#" class="btn btn-primary btn-wa-umum">Chat via WhatsApp</a>
+                        </div>
+
+                        <h4 style="margin-top: 25px;">Jam Operasional</h4>
+                        <!-- Tabel Jam Buka -->
+                        <table class="jam-buka-table">
+                            <thead>
+                                <tr>
+                                    <th>Hari</th>
+                                    <th>Jam Buka</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Senin - Minggu</td>
+                                    <td>09.00 - 19.00 WIB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p style="margin-top: 15px;"><strong>Media Sosial:</strong> Tidak ada</p>
+                    </div>
+
+                    <!-- Peta Lokasi -->
+                    <div class="kontak-map">
+                        <h3>Peta Lokasi</h3>
+                        <div class="map-container">
+                            <!-- TEMPEL KODE IFRAME GOOGLE MAPS DI SINI -->
+                            <div class="map-placeholder">
+                                <p>📍 Jl. Indrokilo Utara Tugu Merah Polaman, Lawang, Kabupaten Malang</p>
+                            </div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/rFHVtUncpHBuEwP88" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-full" style="margin-top: 15px;">
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== 6. FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kedai Ceria &middot; Website dibuat oleh Kelompok 6 SMK PGRI Singosari.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== 7. TOMBOL WHATSAPP MELAYANG ==================== -->
+    <a href="#" class="wa-float btn-wa-umum" aria-label="Chat WhatsApp">
+        💬 Chat WA
+    </a>
+
+    <!-- Menghubungkan ke file JavaScript external -->
+    <script src="script.js"></script>
+</body>
+</html>
